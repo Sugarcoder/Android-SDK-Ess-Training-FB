@@ -1,0 +1,33 @@
+/* 
+
+Under "MainActivity"...
+
+Write these logs within each of the classes - onCreate, onResume, etc 
+
+Example: protected void onCreate() {  
+         super.onCreate;
+         Log.d(LOGTAG, "onCreate"); 
+         }; 
+
+*/ 
+
+
+Log.d(LOGTAG, "onCreate");
+
+Log.d(LOGTAG, "onResume"); 
+
+Log.d(LOGTAG, "onStart"); 
+
+Log.d(LOGTAG, "onPause"); 
+
+Log,d(LOGTAG, "onStop"); 
+
+Log.d(LOGTAG, "onDestroy"); 
+
+Log.d(LOGTAG, "onRestart"); 
+
+
+
+// Before running the application, clear the Logcat and then run the application. 
+
+
