@@ -1,0 +1,26 @@
+// Under the 'button' widget for the respective layout...each button has their own explicit or implicit intent. 
+
+android:text="Explicit Intent" /; 
+
+android:text="Implicit View URL" /;
+
+android:text="Implicit Send Text" /; 
+
+
+
+// Under the MainActivity, write some codes. 
+
+
+public view ImplicitViewURL(View v) {
+    String webpage="http://www.hellokitty.com";
+    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(webpage)); 
+    startActivity(intent); 
+} 
+
+
+public view ImplicitSendText(View v) {
+   Intent intent = new Intent();
+   intent.setAction(Intent.ACTION_SEND);
+   intent.putExtra(Intent.EXTRA_TEXT, "Hello Kitty");            // When adding data to the intent, it is called "extra". 
+   intent.setType("text/plain"); 
+   startActivity(intent); 
