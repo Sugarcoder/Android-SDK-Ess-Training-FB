@@ -24,3 +24,4 @@ public view ImplicitSendText(View v) {
    intent.putExtra(Intent.EXTRA_TEXT, "Hello Kitty");            // When adding data to the intent, it is called "extra". 
    intent.setType("text/plain"); 
    startActivity(intent); 
+}
