@@ -20,7 +20,7 @@ Log.d(LOGTAG, "onStart");
 
 Log.d(LOGTAG, "onPause"); 
 
-Log,d(LOGTAG, "onStop"); 
+Log.d(LOGTAG, "onStop"); 
 
 Log.d(LOGTAG, "onDestroy"); 
 
