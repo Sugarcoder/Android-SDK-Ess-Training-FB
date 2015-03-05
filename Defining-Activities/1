@@ -1,0 +1,56 @@
+	/* 
+	 * ViewGroup (as a layout container): 
+	 * 
+	 * LinearLayout: lay out horizontically or vertically
+	 * 
+	 * RelativeLayout: relative to container or other objects
+	 * 
+	 * GridView: 2D scrollable grid
+	 * 
+	 * ListView: vertical list of scrollable items
+	 * 
+	 * Other: AbsoluteLayout, DrawerLayout, ViewPager
+	 */
+	 
+	 
+/******************************/
+	 
+	 
+/* 
+ * Dimension Resources: 
+ * 
+ * dp: used to adjust images on the screen
+ * 
+ * sp: used to adjust font
+ * 
+ * px: fixed adjustments (don't use, because does not automatically adjust to indiv. devices) 
+ * 
+ * 
+ * Place dimension resources in 'res/values folder'. 
+ * 
+ * ID should be all lower-case. 
+ * 
+ * Default dimensions - dimen: @dimen is a child element in resources (ex. @dimen/activity_vertical_margin) 
+ */
+	
+/*******************************/
+
+
+// Setting dimensions in code (Example): 
+	
+	Button myButton = (Button)findViewByID(R.id.mybutton);
+	myButton.getLayoutParams().height = 100;                     // This sets absolute pixels
+
+/* 
+ * Convert pixels (px) to dp: TypedValue.applyDimension
+ * 
+ * Get screen density and resolution from: getResources().getDisplayMetrics()
+ */
+
+
+// Convert pixel example code: 
+	
+	float pixels = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, getResources().getDisplayMetrics());
+	myButton.getLayoutParams().height = (int) pixels; 
+	 
+	 
